@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.6dp</item>
+        <item name="android:background">#999999</item>
+    </style>
+
+    <style name="line_vertical">
+        <item name="android:layout_width">0.6dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#999999</item>
+    </style>
+
+    <style name="h_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#FFDDDDDD</item>
+    </style>
+
+    <style name="v_line">
+        <item name="android:layout_width">0.3dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#FFDDDDDD</item>
+    </style>
+
 </resources>
