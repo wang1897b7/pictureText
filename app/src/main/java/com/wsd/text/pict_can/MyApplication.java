@@ -29,7 +29,7 @@ public class MyApplication extends Application {
 //    public static AppCache appCache;
 //    public static UserCache userCache;
 //    public static User user;
-
+    public static String session;
     public static String areaCode = "";
     public static String cityName = "";
 
