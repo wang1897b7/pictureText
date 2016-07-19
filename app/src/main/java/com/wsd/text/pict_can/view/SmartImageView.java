@@ -46,10 +46,10 @@ public class SmartImageView extends ImageView {
             url = url.replace("https", "http");
         }
         if (errorDrawable == 0) {
-            errorDrawable = R.mipmap.default_bg_9;
+            errorDrawable = R.drawable.default_bg;
         }
         if (loadDrawable == 0) {
-            loadDrawable = R.mipmap.default_bg_9;
+            loadDrawable = R.drawable.default_bg;
         }
         setScaleType(ScaleType.FIT_XY);
         if (mContext != null) {

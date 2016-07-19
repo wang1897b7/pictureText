@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.wsd.text.pict_can.MainActivity;
 import com.wsd.text.pict_can.R;
 
 public class Login extends Activity {
@@ -36,6 +37,14 @@ public class Login extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (Login.this,Register.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Login.this, MainActivity.class);
                 startActivity(intent);
             }
         });

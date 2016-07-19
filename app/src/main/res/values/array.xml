@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="crop_or_original_array">
+        <item>拍照</item>
+        <item>从相册中选择</item>
+    </array>
+
+</resources>

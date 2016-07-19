@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+
     <color name="colorAccent">#FF4081</color>
 
 
@@ -37,4 +36,149 @@
     <color name="bg_window">#ebebeb</color>
     <color name="text_black">#363434</color>
     <color name="text_black_2">#282828</color>
+
+
+    <!--app theme color-->
+    <color name="dark_gray">#c7c7c7</color>
+    <color name="style_color_primary">#f4f4f4</color>
+    <color name="my_limit_color_bg_1">#20e83c36</color>
+    <color name="my_limit_color_bg_2">#40e83c36</color>
+    <color name="style_color_primary_dark">#757575</color>
+    <color name="style_color_accent">#01bcd5</color>
+    <color name="style_color_transparent">#00000000</color>
+    <color name="dark_black">#444444</color>
+
+    <!--title color-->
+    <color name="back_text">@color/deep_black</color>
+    <color name="tab_text_normal">#555555</color>
+    <color name="tab_text_press">#e13333</color>
+    <color name="guide_1">#61bcfa</color>
+    <color name="guide_2">#ff8e38</color>
+    <color name="guide_3">#45be90</color>
+    <color name="guide_4">#fffbf0</color>
+    <!--常用颜色 -->
+    <color name="cube_mints_white">@color/white</color>
+    <color name="cube_mints_FFE2B1">#FFE2B1</color>
+    <color name="cube_mints_FDEE89">#FDEE89</color>
+    <color name="deep_black">#333333</color>
+    <color name="cube_mints_cccccc">#cccccc</color>
+    <color name="light_black">#666666</color>
+    <color name="gray">#999999</color>
+    <color name="cube_mints_f1f1f1">#f1f1f1</color>
+    <color name="black">#000000</color>
+    <color name="cube_mints_app_base_background">#373737</color>
+    <color name="cube_mints_base_font_color">#007edf</color>
+    <color name="cube_mints_main_color">#007edf</color>
+    <color name="cube_mints_4d90fe">#4d90fe</color>
+    <color name="cube_mints_272f3b">#272f3b</color>
+    <color name="cube_mints_afafaf">#afafaf</color>
+    <color name="cube_mints_31a7d4">#31a7d4</color>
+    <color name="cube_mints_878787">#878787</color>
+    <color name="cube_mints_2991b8">#2991b8</color>
+    <color name="cube_mints_fbf2e9">#fbf2e9</color>
+    <color name="cube_mints_d5d6d6">#d5d6d6</color>
+    <color name="cube_mints_443b3b">#443b3b</color>
+    <color name="cube_mints_e5e5e5">#e5e5e5</color>
+    <color name="cube_mints_d6d6d6">#d6d6d6</color>
+    <color name="cube_mints_f7f7f7">#f7f7f7</color>
+    <color name="cube_mints_b3b3b3">#b3b3b3</color>
+    <color name="cube_mints_ffeeee">#ffeeee</color>
+    <color name="cube_mints_4d5562">#4d5562</color>
+    <color name="cube_mints_ffaaaa">#ffaaaa</color>
+    <color name="cube_mints_d72f49">#d72f49</color>
+    <color name="cube_mints_2db18d">#2db18d</color>
+    <color name="cube_mints_bbbbbb">#bbbbbb</color>
+    <color name="cube_mints_269f7e">#269f7e</color>
+    <color name="cube_mints_fef3d8">#fef3d8</color>
+    <color name="cube_mints_ab5f2d">#ab5f2d</color>
+
+    <color name="common_split_color">#dcdedf</color>
+    <color name="light_white">#f8f8f8</color>
+    <!--btn color-->
+    <color name="btn_red_enable">#dbdbdb</color>
+    <color name="btn_red_able_normal">@color/red</color>
+    <color name="btn_red_able_press">#dc3832</color>
+    <color name="btn_white_able_press">#eeeeee</color>
+    <!--red_oval-->
+    <color name="global_red">@color/btn_red_able_normal</color>
+    <color name="tab_gb_color">@color/light_white</color>
+    <color name="bg_edittext_focused">#f2f2f2</color>
+
+    <color name="cube_mints_5c5c5c">#5c5c5c</color>
+    <color name="release_car_bg">#f1f1ef</color>
+    <color name="earnest_background">#37404f</color>
+    <color name="progress_bg_color">#d33d29</color>
+    <color name="cube_white_60">#60ffffff</color>
+    <color name="cube_white_30">#30ffffff</color>
+    <color name="cube_transparency">#00000000</color>
+    <color name="cube_mints_ff6600">#ff6600</color>
+    <color name="cube_minst_dcdedf">#dcdedf</color>
+    <color name="cube_minst_ececec">#ECECEC</color>
+    <color name="cube_mints_000000">@color/black</color>
+    <color name="cube_mints_53c093">#53c093</color>
+
+    <color name="light_gray">#e2e2e2</color>
+    <!--时间部件-->
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <color name="state_line_success_color">#42bf7a</color>
+    <color name="state_line_error_color">@color/gray</color>
+    <!--图片选择-->
+    <color name="album_item_bg">#fffcfcfd</color>
+    <color name="mine_bg">@color/white</color>
+    <color name="mine_bg_selected">#d9d9d9</color>
+
+    <drawable name="item_normal">@color/white</drawable>
+    <drawable name="item_pressed">#E5E5E5</drawable>
+    <drawable name="transparent_drawable">#00000000</drawable>
+    <drawable name="window_dim_bg">#78000000</drawable>
+    <color name="service_tel_color">#0072ff</color>
+
+    <color name="wallet_in_color">#4cb7df</color>
+    <color name="voice_press_bg">#B70202</color>
+
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <!--字母-->
+    <color name="alpha_color">#898989</color>
+    <!--买卖车订单-->
+    <color name="order_status_bar_color">#37404f</color>
+
+    <color name="account_about">#888888</color>
+    <color name="cube_mints_bebebe">#bebebe</color>
+    <color name="cube_mints_3eafcf">#3ea7cf</color>
+
+    <color name="cube_60_000000">#60000000</color>
+    <color name="cube_40_000000">#40000000</color>
+
+
+    <drawable name="light_dark_drawable">#7f000000</drawable>
+    <drawable name="full_dark_drawable">#ff000000</drawable>
+
+    <color name="cube_ff5d60">#ff5d60</color>
+    <color name="cube_ffbdbd">#ffbdbd</color>
+    <color name="cube_fff2f2">#fff2f2</color>
+    <color name="cube_f3f3f3">#f3f3f3</color>
+    <color name="cube_636363">#636363</color>
+    <color name="cube_ab5f2d">#ab5f2d</color>
+    <color name="cube_d3d3d3">#d3d3d3</color>
+    <color name="cube_666666">#666666</color>
+
+
+    <color name="red">#bf360c</color>
+    <color name="ripple_red">#ffbf5232</color>
+
+    <color name="material_teal">@color/material_deep_teal_500</color>
+    <color name="ripple_material_teal">#ff149691</color>
+
+    <color name="blue">#304f9f</color>
+    <color name="grey">@color/material_blue_grey_800</color>
+    <color name="light">@color/primary_material_light</color>
+
+    <color name="colorPrimary">@color/material_deep_teal_500</color>
+    <color name="colorPrimaryDark">@color/material_deep_teal_500</color>
+
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
 </resources>
