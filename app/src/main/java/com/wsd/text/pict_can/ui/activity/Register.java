@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wsd.text.pict_can.MainActivity;
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.model.People;
 
@@ -69,7 +68,7 @@ public class Register extends BaseActivity {
                p.name=user.getText().toString();
                p.password=user.getText().toString();
               p.save();
-               Intent intent = new Intent(context, MainActivity.class);
+               Intent intent = new Intent(context, WebViewActivity.class);
                startActivity(intent);
 
        }

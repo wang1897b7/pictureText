@@ -1,0 +1,49 @@
+<html>
+    <script language="javascript">
+        /* This function is invoked by the activity */
+        function wave(phone) {
+           document.getElementById("droid").src="pass_invisable";
+            alert(phone);
+        }
+    </script>
+    <body>
+        <!-- Calls into the javascript interface for the activity -->
+        <a onClick="window.demo.clickOnAndroid()">
+        <div style="width:80px;
+            margin:0px auto;
+            padding:10px;
+            text-align:center;
+            border:2px solid #202020;" >
+                <img id="droid" src="pass_visable"/><br>
+                Click me!
+        </div></a>
+        
+         <a onClick="window.demo.clickOnBarcode1()">
+        <div style="width:80px;
+            margin:0px auto;
+            padding:10px;
+            text-align:center;
+            border:2px solid #202020;" >
+                <img id="droid" src="pass_visable"/><br>
+               you  Click me!
+        </div></a>
+        
+        <div class="hide" id="div">
+
+<font color="#FF0000">this is a hide div~~~~</font>
+
+
+</div>
+<div >
+
+<font id  = "content"  color="#FF0000">���صĶ�ά��ֵ</font>
+</div>
+    </body>
+    <script type="text/javascript">
+    function clickOnBarcode1(){
+    	var result = " return++Java++string";
+    	window.demo.barCode(result);
+    	
+    }
+    </script>
+</html>
