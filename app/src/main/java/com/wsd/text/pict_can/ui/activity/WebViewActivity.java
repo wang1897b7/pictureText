@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import com.wsd.text.pict_can.R;
 
+import java.net.URLDecoder;
+
 public class WebViewActivity extends AppCompatActivity {
 
     private TextView tv_data;
@@ -32,6 +34,7 @@ public class WebViewActivity extends AppCompatActivity {
 
         webview.loadData("", "text/html", null);
         // <a onClick="window.demo.clickOnAndroid()"> demo 是程序实例的意思，基于windows开发的demo都可以运行的
+        //demo 是服务器端的class文件名 用于绑定webview 的js方法
         webview.addJavascriptInterface(new DemoJavaScriptInterface(), "demo");//文件地址和方法名
         webview.loadUrl("file:///android_asset/demo.html");
       //  webview.loadUrl("http://wap.baidu.com");
@@ -69,7 +72,9 @@ public class WebViewActivity extends AppCompatActivity {
 
         @JavascriptInterface
         public void barCode(String js) {
-            Log.e("Webview_http", "clickOnBarcode"+js);
+            Log.e("Webview_http", "js++"+js);
+            String  text = decode(js);
+            Log.e("Webview_http", "clickOnBarcode"+text);
             mHandler.post(new Runnable() {
 
 
@@ -85,7 +90,18 @@ public class WebViewActivity extends AppCompatActivity {
 
         }
     }
-
+    public static String decode(String s) {
+        if (s == null) {
+            return null;
+        }
+        try {
+            return URLDecoder.decode(s, "UTF-8");
+        } catch (Exception e) {
+            // utf-8 always available
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 
 
@@ -133,10 +149,17 @@ public class WebViewActivity extends AppCompatActivity {
 
         @Override
         public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
 
             view.loadUrl("javascript:clickOnBarcode1()");
 
-
+//           view.evaluateJavascript("clickOnBarcode1()", new ValueCallback<String>() {
+//               @Override
+//               public void onReceiveValue(String s) {
+//                   Log.i("String","json:"+s);
+//               }
+//
+//           });
 
         }
 
