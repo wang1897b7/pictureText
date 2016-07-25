@@ -31,6 +31,7 @@ public class HomeFragmemt extends BaseFragment{
         View mView = inflater.inflate(R.layout.fragment_home, container, false);
         pager = (ViewPager)mView. findViewById(R.id.viewpager);
         slidingTabLayout = (SlidingTabLayout)mView. findViewById(R.id.sliding_tabs);
+        init();
         return mView;
     }
 
