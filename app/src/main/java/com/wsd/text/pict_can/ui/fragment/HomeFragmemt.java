@@ -63,7 +63,7 @@ public class HomeFragmemt extends BaseFragment{
         for (int i = 0, size = banners.size(); i < size; i++) {
            // final Banner banner = banners.get(i);
             DefaultSliderView sliderView = new DefaultSliderView(getActivity());
-            DefaultSliderView sliderView = new DefaultSliderView(getActivity());
+           // DefaultSliderView sliderView = new DefaultSliderView(getActivity());
             sliderView.image("www.baidu.com")
                     .setScaleType(BaseSliderView.ScaleType.FitCenter)
                     .showImageResForEmpty(R.drawable.default_bg)
