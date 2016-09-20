@@ -5,6 +5,11 @@
     android:orientation="vertical"
     >
 
+    <com.ecloud.pulltozoomview.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -27,6 +32,8 @@
 
          </LinearLayout>
     </RelativeLayout>
+    </com.ecloud.pulltozoomview.PullToZoomScrollViewEx>
+
     <View
         style="@style/line"
         android:layout_height="2dp"
