@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.wsd.text.pict_can.MainActivity;
 import com.wsd.text.pict_can.R;
+import com.wsd.text.pict_can.ui.MainActivity;
 
 public class Login extends Activity {
 

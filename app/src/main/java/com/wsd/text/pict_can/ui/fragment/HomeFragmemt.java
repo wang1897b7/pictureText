@@ -14,6 +14,7 @@ import android.widget.FrameLayout;
 
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.adapter.ViewPagerAdapter;
+import com.wsd.text.pict_can.ui.BaseFragment;
 import com.wsd.text.pict_can.view.SlidingTabLayout;
 
 import java.util.List;
@@ -25,7 +26,7 @@ import cn.lightsky.infiniteindicator.slideview.DefaultSliderView;
 /**
  * Created by Sun on 2016/7/14.
  */
-public class HomeFragmemt extends BaseFragment{
+public class HomeFragmemt extends BaseFragment {
 
     ViewPager pager;
     private String[] titles = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
@@ -42,6 +43,15 @@ public class HomeFragmemt extends BaseFragment{
         slidingTabLayout = (SlidingTabLayout)mView. findViewById(R.id.sliding_tabs);
         init();
         return mView;
+    }
+
+    public static HomeFragmemt newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        HomeFragmemt fragment = new HomeFragmemt();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     private void init(){

@@ -13,10 +13,11 @@ import android.widget.Toast;
 
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.model.People;
+import com.wsd.text.pict_can.ui.BaseLoadingActivity;
 
 import java.util.Random;
 
-public class Register extends BaseActivity {
+public class Register extends BaseLoadingActivity implements View.OnClickListener {
 
     private MyCount mCount;
     private TextView getCode;
@@ -30,6 +31,16 @@ public class Register extends BaseActivity {
         setContentView(R.layout.activity_register);
         context=this;
         init();
+    }
+
+    @Override
+    protected void obtainParam(Intent intent) {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 
     private void init(){
@@ -48,7 +59,7 @@ public class Register extends BaseActivity {
                 Toast.makeText(context,""+createCode(),Toast.LENGTH_LONG).show();
             }
         });
-        btn_sub.setOnClickListener(this);
+       btn_sub.setOnClickListener(this);
     }
 
     private void startTimerTask(){
@@ -61,7 +72,7 @@ public class Register extends BaseActivity {
 
     @Override
     public void onClick(View view) {
-        super.onClick(view);
+
        switch (view.getId()){
            case R.id.register_sub:
                People p = new People();
@@ -80,6 +91,12 @@ public class Register extends BaseActivity {
     public int createCode() {
         return new Random().nextInt(900000) + 100000;
     }
+
+    @Override
+    protected void loadData() {
+
+    }
+
     /**
      * 定义一个倒计时的内部类
      */
