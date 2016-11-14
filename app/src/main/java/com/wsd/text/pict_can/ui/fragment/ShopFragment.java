@@ -38,6 +38,15 @@ public class ShopFragment extends BaseLoadingFragment {
     private MainRecyclerAdapter mAdapter;
     public ItemTouchHelperExtension mItemTouchHelper;
     public ItemTouchHelperExtension.Callback mCallback;
+
+    public static ShopFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        ShopFragment fragment = new ShopFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

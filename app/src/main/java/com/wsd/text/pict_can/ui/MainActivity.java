@@ -10,6 +10,9 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.ui.fragment.HomeFragmemt;
+import com.wsd.text.pict_can.ui.fragment.PersonalFragment;
+import com.wsd.text.pict_can.ui.fragment.SampleFragment;
+import com.wsd.text.pict_can.ui.fragment.ShopFragment;
 import com.wsd.text.pict_can.utils.ToastUtil;
 import com.wsd.text.pict_can.view.StillViewPager;
 
@@ -56,7 +59,7 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
                         .setActiveColorResource(R.color.main_black_sub))
                 .addItem(new BottomNavigationItem(R.drawable.ic_order_nor, "Movies & TV").setActiveColorResource
                         (R.color.main_black_third))
-                .addItem(new BottomNavigationItem(R.drawable.ic_customer_nor, "Games")
+                .addItem(new BottomNavigationItem(R.drawable.ic_customer_nor, "个人")
                         .setActiveColorResource(R.color.red))
                 .setFirstSelectedPosition(0)
                 .initialise();
@@ -100,9 +103,10 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
     private void setupViewPager(ViewPager viewPager) {
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         adapter.addFragment(HomeFragmemt.newInstance());
-        adapter.addFragment(HomeFragmemt.newInstance());
-        adapter.addFragment(HomeFragmemt.newInstance());
-        adapter.addFragment(HomeFragmemt.newInstance());
+        adapter.addFragment(SampleFragment.newInstance());
+        adapter.addFragment(ShopFragment.newInstance());
+        adapter.addFragment(SampleFragment.newInstance());
+        adapter.addFragment(PersonalFragment.newInstance());
         viewPager.setAdapter(adapter);
     }
 

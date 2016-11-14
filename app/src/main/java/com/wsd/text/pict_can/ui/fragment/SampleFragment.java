@@ -23,6 +23,14 @@ public class SampleFragment extends BaseLoadingFragment {
         return f;
     }
 
+    public static SampleFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        SampleFragment fragment = new SampleFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         position = getArguments().getInt(ARG_POSITION);

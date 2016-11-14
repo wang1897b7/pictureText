@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg">
-    <cn.superwan.dms.widget.StillViewPager
+    <com.wsd.text.pict_can.view.StillViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +13,6 @@
         android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="bottom"/>
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_size"
+        android:background="?attr/colorPrimary">
+
+        <com.wsd.text.pict_can.view.MenuView
+            android:id="@+id/left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:minWidth="@dimen/actionbar_size"
+            android:scaleType="center"
+            tools:src="@drawable/ic_home_message"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Toolbar_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/main_black"
+            tools:text="@string/app_name"/>
+
+        <com.wsd.text.pict_can.view.MenuView
+            android:id="@+id/right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:minWidth="@dimen/actionbar_size"
+            android:scaleType="center"
+            android:visibility="gone"
+            tools:src="@drawable/ic_home_add"
+            tools:visibility="visible"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_toolbar_shadow"/>
+
+</FrameLayout>

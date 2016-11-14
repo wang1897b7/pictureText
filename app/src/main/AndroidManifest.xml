@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.Register" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.wsd.text.pict_can.ui.MainActivity" />
         <activity android:name=".ui.activity.WebViewActivity" />
         <activity android:name=".ui.activity.BigPictureActivity"></activity>
 
