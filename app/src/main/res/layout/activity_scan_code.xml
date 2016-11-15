@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:background="@color/scan_bg">
 
-        <include layout="@layout/toolbar_title"/>
+        <include layout="@layout/toolbar_main"/>
 
     </RelativeLayout>
     <!-- 扫描框底部的布局 -->
@@ -60,18 +60,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="14sp"/>
 
-            <TextView
-                android:id="@+id/zxing_image_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
-                android:drawablePadding="12dp"
-                android:drawableTop="@mipmap/zxing_icon_image"
-                android:padding="12dp"
-                android:text="从相册找"
-                android:textColor="@android:color/white"
-                android:textSize="14sp"/>
-
 
         </LinearLayout>
 
@@ -111,7 +99,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_margin="5dp"
                 android:background="@drawable/scanning_line" />
-            <com.superwan.chaojiwan.component.ScanView
+            <com.wsd.text.pict_can.view.ScanView
                 android:id="@+id/scan_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

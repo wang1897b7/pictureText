@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wsd.text.pict_can">
-
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -27,6 +27,8 @@
         <meta-data
             android:name="linkedme.sdk.key"
             android:value="替换为后台设置页面中的LinkedME Key" />
+
+        <activity android:name=".ui.zxing.ScanCodeActivity"/>
 
     </application>
 

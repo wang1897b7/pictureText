@@ -39,6 +39,7 @@ dependencies {
     compile files('libs/LinkedME-Android-Deep-Linking-SDK-V1.0.3.jar')
     compile 'com.github.frank-zhu:pullzoomview:1.0.0'
     compile files('libs/ShareSDK-Wechat-Moments-2.6.3.jar')
+    compile files('libs/zxing.jar')
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.loopeer.library:itemtouchhelperextension:1.0.0'
@@ -57,4 +58,5 @@ dependencies {
     compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
     compile project(path: ':library_circle_viewpager')
     compile project(path: ':library_recycler_adapter')
+    compile "com.android.support:cardview-v7:${android_support_version}"
 }
