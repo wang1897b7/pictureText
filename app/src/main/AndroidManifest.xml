@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wsd.text.pict_can">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -19,15 +20,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.Register" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.activity.WebViewActivity" />
-        <activity android:name=".ui.activity.BigPictureActivity"></activity>
-
+        <activity android:name=".ui.activity.BigPictureActivity" />
 
         <meta-data
             android:name="linkedme.sdk.key"
             android:value="替换为后台设置页面中的LinkedME Key" />
 
+        <activity android:name=".ui.zxing.ScanCodeActivity" />
+        <activity android:name=".ui.activity.SlidLayout" />
+        <activity android:name=".ui.activity.FlowLayoutActivity"></activity>
     </application>
 
 </manifest>

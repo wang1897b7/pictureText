@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.loopeer.itemtouchhelperextension.ItemTouchHelperExtension;
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.model.TestModel;
+import com.wsd.text.pict_can.ui.BaseLoadingFragment;
 import com.wsd.text.pict_can.utils.DividerItemDecoration;
 import com.wsd.text.pict_can.utils.ItemTouchHelperCallback;
 import com.wsd.text.pict_can.utils.MainRecyclerAdapter;
@@ -27,7 +28,7 @@ import butterknife.OnClick;
 /**
  * Created by Sun on 2016/7/14.
  */
-public class ShopFragment extends  BaseFragment {
+public class ShopFragment extends BaseLoadingFragment {
 
     @BindView(R.id.shop_tvText)
     TextView username;
@@ -37,6 +38,15 @@ public class ShopFragment extends  BaseFragment {
     private MainRecyclerAdapter mAdapter;
     public ItemTouchHelperExtension mItemTouchHelper;
     public ItemTouchHelperExtension.Callback mCallback;
+
+    public static ShopFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        ShopFragment fragment = new ShopFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -44,6 +54,21 @@ public class ShopFragment extends  BaseFragment {
         ButterKnife.bind(this,view);
         init();
         return view;
+    }
+
+    @Override
+    protected int getContentLayout() {
+        return 0;
+    }
+
+    @Override
+    protected void loadData() {
+
+    }
+
+    @Override
+    protected void initView(View view) {
+
     }
 
     private void init(){
@@ -84,4 +109,13 @@ public class ShopFragment extends  BaseFragment {
         Toast.makeText(getActivity(),"测试",Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    protected void lazyLoad() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
 }

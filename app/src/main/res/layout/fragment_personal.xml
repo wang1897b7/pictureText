@@ -9,50 +9,6 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/state_line_success_color"
-        >
-         <com.wsd.text.pict_can.view.SmartImageView
-             android:id="@+id/personal_head"
-             android:layout_centerHorizontal="true"
-             android:layout_centerVertical="true"
-             android:layout_width="150dp"
-             android:layout_height="150dp" />
-
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal"
-             android:layout_below="@+id/personal_head"
-             >
-
-
-         </LinearLayout>
-    </RelativeLayout>
     </com.ecloud.pulltozoomview.PullToZoomScrollViewEx>
-
-    <View
-        style="@style/line"
-        android:layout_height="2dp"
-        android:background="@color/black"
-          ></View>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-      <TextView
-          android:layout_width="150dp"
-          android:layout_height="150dp"
-          android:id="@+id/tv_bigPic"
-          android:text="大图"
-          android:textSize="30sp"
-          />
-
-
-    </LinearLayout>
 
 </LinearLayout>

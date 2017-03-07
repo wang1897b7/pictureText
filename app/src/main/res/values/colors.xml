@@ -176,9 +176,22 @@
     <color name="grey">@color/material_blue_grey_800</color>
     <color name="light">@color/primary_material_light</color>
 
-    <color name="colorPrimary">@color/material_deep_teal_500</color>
-    <color name="colorPrimaryDark">@color/material_deep_teal_500</color>
 
     <color name="windowBackgroundColor">#333333</color>
     <color name="black_translucent">#80000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="main_background">#FFF</color>
+
+
+
+    <color name="main_gray">#F5F5F5</color>
+    <color name="main_black">#333333</color>
+    <color name="main_black_sub">#666666</color>
+    <color name="main_black_third">#999999</color>
+    <color name="black_cc">#66303F9F</color>
+    <color name="main">#de0032</color>
+
+    <color name="scan_bg">#7f000000</color>
 </resources>

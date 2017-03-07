@@ -4,24 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+  <Button
+      android:id="@+id/first"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SlidingTabLayout"
+      />
+  <Button
+      android:id="@+id/second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="flowLayout"
+      />
 
-  <FrameLayout
-      android:id="@+id/top_banner"
-      android:layout_width="match_parent"
-      android:layout_height="254dp"/>
-
-    <com.wsd.text.pict_can.view.SlidingTabLayout
-        android:id="@+id/sliding_tabs"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="?attr/colorPrimaryDark"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp" />
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:background="@android:color/white" />
 </LinearLayout>

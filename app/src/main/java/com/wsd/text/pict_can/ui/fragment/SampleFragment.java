@@ -6,9 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.wsd.text.pict_can.R;
+import com.wsd.text.pict_can.ui.BaseLoadingFragment;
 import com.wsd.text.pict_can.view.FloatingActionButton;
 
-public class SampleFragment extends BaseFragment {
+public class SampleFragment extends BaseLoadingFragment {
 
     private static final String ARG_POSITION = "position";
 
@@ -22,6 +23,14 @@ public class SampleFragment extends BaseFragment {
         return f;
     }
 
+    public static SampleFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        SampleFragment fragment = new SampleFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         position = getArguments().getInt(ARG_POSITION);
@@ -53,5 +62,30 @@ public class SampleFragment extends BaseFragment {
         }
 
         return rootView;
+    }
+
+    @Override
+    protected int getContentLayout() {
+        return 0;
+    }
+
+    @Override
+    protected void loadData() {
+
+    }
+
+    @Override
+    protected void initView(View view) {
+
+    }
+
+    @Override
+    protected void lazyLoad() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

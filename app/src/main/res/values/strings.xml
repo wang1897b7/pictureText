@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pict_Can</string>
+    <string name="scan_allcode_hint">对准定金条形码/礼品条形码到框内即可扫描验证</string>
 </resources>
