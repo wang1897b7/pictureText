@@ -1,6 +1,7 @@
 package com.wsd.text.pict_can.ui;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -25,10 +26,11 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity implements BottomNavigationBar.OnTabSelectedListener {
 
-    @BindView(R.id.bottom_navigation_bar)
-    BottomNavigationBar mBottomNavigationBar;
+
     @BindView(R.id.viewpager)
     StillViewPager mViewpager;
+    @BindView(R.id.bottom_navigation_bar)
+    BottomNavigationBar mBottomNavigationBar;
 
     @Override
     protected int getContentView() {
@@ -108,6 +110,13 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
         adapter.addFragment(SampleFragment.newInstance());
         adapter.addFragment(PersonalFragment.newInstance());
         viewPager.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
     }
 
     private static class FragmentAdapter extends FragmentPagerAdapter {
