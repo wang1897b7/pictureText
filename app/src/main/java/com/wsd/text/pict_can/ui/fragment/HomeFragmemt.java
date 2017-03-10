@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.ui.BaseFragment;
 import com.wsd.text.pict_can.ui.activity.FlowLayoutActivity;
+import com.wsd.text.pict_can.ui.activity.SelectChose;
 import com.wsd.text.pict_can.ui.activity.SlidLayout;
 
 import butterknife.BindView;
@@ -29,6 +30,8 @@ public class HomeFragmemt extends BaseFragment {
     View mView;
     @BindView(R.id.second)
     Button mSecond;
+    @BindView(R.id.pictureChose)
+    Button mPictureChose;
 
     @Nullable
     @Override
@@ -62,8 +65,15 @@ public class HomeFragmemt extends BaseFragment {
                 startActivity(intent);
             }
         });
-    }
+        mPictureChose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SelectChose.class);
+                startActivity(intent);
+            }
+        });
 
+    }
 
 
 }

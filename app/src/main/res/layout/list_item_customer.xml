@@ -18,14 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.wsd.text.pict_can.view.ShapeImageView
+        <com.wsd.text.pict_can.component.ShapeImageView
             android:id="@+id/customer_avatar"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/bg_avatar"
-            app:onlyDrawBorder="false"
-            app:shape="rectangle"/>
+            android:src="@drawable/bg_avatar" />
 
         <TextView
             android:id="@+id/customer_name"

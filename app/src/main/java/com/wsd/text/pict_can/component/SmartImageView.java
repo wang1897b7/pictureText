@@ -1,4 +1,4 @@
-package com.wsd.text.pict_can.view;
+package com.wsd.text.pict_can.component;
 
 import android.content.Context;
 import android.support.annotation.DrawableRes;

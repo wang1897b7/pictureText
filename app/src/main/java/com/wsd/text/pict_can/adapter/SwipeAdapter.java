@@ -6,7 +6,7 @@ import com.chad.library.adapter.base.BaseItemDraggableAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.wsd.text.pict_can.R;
 import com.wsd.text.pict_can.model.Customer;
-import com.wsd.text.pict_can.view.ShapeImageView;
+import com.wsd.text.pict_can.component.ShapeImageView;
 
 import java.util.List;
 

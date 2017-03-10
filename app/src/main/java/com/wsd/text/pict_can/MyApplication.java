@@ -6,13 +6,23 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.support.multidex.MultiDex;
 import android.telephony.TelephonyManager;
 
 import com.raizlabs.android.dbflow.config.FlowManager;
+import com.tencent.bugly.Bugly;
+import com.tencent.bugly.beta.Beta;
+import com.wsd.text.pict_can.component.pictureChose.listener.GlidePauseOnScrollListener;
+import com.wsd.text.pict_can.component.pictureChose.loader.GlideImageLoader;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
+
+import cn.finalteam.galleryfinal.CoreConfig;
+import cn.finalteam.galleryfinal.FunctionConfig;
+import cn.finalteam.galleryfinal.GalleryFinal;
+import cn.finalteam.galleryfinal.ThemeConfig;
 
 
 /**
@@ -61,7 +71,45 @@ public class MyApplication extends Application {
 //
 //        SDKInitializer.initialize(getApplicationContext());
 //        appImageLoaderConfig();
+
+        //建议在application中配置
+        //设置主题
+        ThemeConfig theme = new ThemeConfig.Builder()
+                .build();
+        //配置功能
+        FunctionConfig functionConfig = new FunctionConfig.Builder()
+                .setEnableCamera(true)
+                .setEnableEdit(true)
+                .setEnableCrop(true)
+                .setEnableRotate(true)
+                .setCropSquare(true)
+                .setEnablePreview(true)
+                .build();
+        CoreConfig coreConfig = new CoreConfig.Builder(this, new GlideImageLoader(), theme)
+                .setFunctionConfig(functionConfig)
+                .setPauseOnScrollListener(new GlidePauseOnScrollListener(false, true))
+                .build();
+        GalleryFinal.init(coreConfig);
         FlowManager.init(this);
+
+        initBuglyAndTinker();
+    }
+
+
+    private void initBuglyAndTinker() {
+        Bugly.init(this, BuildConfig.BUGLY_ID,BuildConfig.DEBUG);
+        Bugly.setIsDevelopmentDevice(getApplicationContext(), BuildConfig.DEBUG);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        // you must install multiDex whatever tinker is installed!
+        MultiDex.install(base);
+
+
+        // 安装tinker
+        Beta.installTinker();
     }
 
 
