@@ -26,10 +26,10 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.janmart.jianmate.R;
-import com.janmart.jianmate.component.TabLayoutView.listener.OnTabSelectListener;
-import com.janmart.jianmate.component.TabLayoutView.utils.UnreadMsgUtils;
-import com.janmart.jianmate.component.TabLayoutView.widget.MsgView;
+import com.wsd.text.pict_can.R;
+import com.wsd.text.pict_can.component.TabLayoutView.listener.OnTabSelectListener;
+import com.wsd.text.pict_can.component.TabLayoutView.utils.UnreadMsgUtils;
+import com.wsd.text.pict_can.component.TabLayoutView.widget.MsgView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -242,6 +242,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager.
         for(int i=0;i<aTitles.size();i++){
             titles[i]=aTitles.get(i);
         }
+
         this.mViewPager = vp;
         this.mViewPager.setAdapter(new InnerPagerAdapter(fa.getSupportFragmentManager(), fragments, titles));
 

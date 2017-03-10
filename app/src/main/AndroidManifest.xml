@@ -30,7 +30,8 @@
 
         <activity android:name=".ui.zxing.ScanCodeActivity" />
         <activity android:name=".ui.activity.SlidLayout" />
-        <activity android:name=".ui.activity.FlowLayoutActivity"></activity>
+        <activity android:name=".ui.activity.FlowLayoutActivity" />
+        <activity android:name=".ui.activity.SelectChose"></activity>
     </application>
 
 </manifest>

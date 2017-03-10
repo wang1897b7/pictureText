@@ -1,0 +1,21 @@
+project.ext {
+    versionName = "1.0.0"
+    versionCode = 1
+    /*
+    *发Release包前必读:
+    * 1. 修改baseApkDir后缀日期为当日
+    * 2. 确保tinkerId后缀为base
+    * 3. 点击:app/Tasks/build/assembleRelease
+    * 4. 将app/build/bakApk中当前编译产物如app-0222-15-25-44,重命名为baseApkDir的值，务必不能删除
+    * */
+    /*
+    *发HotFix包前必读:
+    * 1. 确保app/build/bakApk中有当前未修复的文件(baseApkDir的值）
+    * 2. 修改bug
+    * 3. 确保tinkerId后缀为patch
+    * 4. 点击:app/Tasks/tinker-support/buildAllFlavorsTinkerPatchRelease
+    * 5. 在bugly/应用升级/热更新/发布补丁,上传app/outputs/patch/对应的渠道包/patch_signed_7zip.apk
+    * * */
+    baseApkDir = "SuperWan_Business_${versionName}_0222"
+    tinkerId = "${versionName}-patch"
+}
