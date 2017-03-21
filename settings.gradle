@@ -1,4 +1,5 @@
 include ':app'
 include ':library_circle_viewpager'
 include ':library_recycler_adapter'
+include ':library'
 

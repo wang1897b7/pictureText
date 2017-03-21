@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 def dbflow_version = "3.0.0-beta4"
+def buildTime = new Date().format("yyyy-MM-dd HH:mm", TimeZone.getTimeZone("GMT+8:00"))
 def buglyId = "b2c541890a"
 apply from: 'tinker-support.gradle'
 android {
@@ -12,6 +13,8 @@ android {
         applicationId "com.wsd.text.pict_can"
         minSdkVersion Integer.parseInt(MIN_SDK)
         targetSdkVersion Integer.parseInt(TARGET_SDK)
+        buildConfigField "String", "BUILD_TIME", "\"${buildTime}\""
+        buildConfigField "String", "BUGLY_ID", "\"${buglyId}\""
         versionCode 2
         versionName "2.0"
     }
@@ -42,6 +45,7 @@ dependencies {
     compile 'com.github.frank-zhu:pullzoomview:1.0.0'
     compile files('libs/ShareSDK-Wechat-Moments-2.6.3.jar')
     compile files('libs/zxing.jar')
+    compile project(':library')
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.loopeer.library:itemtouchhelperextension:1.0.0'

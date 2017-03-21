@@ -22,5 +22,11 @@
       android:layout_height="wrap_content"
       android:text="照片多选"
       />
+  <com.wsd.text.pict_can.component.SmartImageView
+      android:id="@+id/img_url"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:background="@color/app_red"
+     />
 
 </LinearLayout>

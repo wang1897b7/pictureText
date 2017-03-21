@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/library_circle_viewpager" />
             <option value="$PROJECT_DIR$/library_recycler_adapter" />
           </set>

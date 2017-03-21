@@ -1,5 +1,6 @@
 package com.wsd.text.pict_can.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -38,6 +39,9 @@ public class SelectChose extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_chose);
         ButterKnife.bind(this);
+        Intent intent=getIntent();
+        String text=intent.getStringExtra("text");
+        Toast.makeText(this,"这是一个空的"+text,Toast.LENGTH_LONG).show();
         init();
     }
 
