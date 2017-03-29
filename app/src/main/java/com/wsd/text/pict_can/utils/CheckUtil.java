@@ -12,6 +12,7 @@ import android.graphics.Matrix;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore.MediaColumns;
 import android.text.Html;
@@ -98,6 +99,10 @@ public class CheckUtil {
             }
         }
         return newArray;
+    }
+
+    public static Boolean sdkVersion() {
+        return Build.VERSION.SDK_INT >= 23;
     }
 
     public static boolean checkEmail(String email) {

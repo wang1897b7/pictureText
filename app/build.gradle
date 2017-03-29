@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 def dbflow_version = "3.0.0-beta4"
 def buildTime = new Date().format("yyyy-MM-dd HH:mm", TimeZone.getTimeZone("GMT+8:00"))
-def buglyId = "b2c541890a"
+def buglyId = "51cee3e88d"
 apply from: 'tinker-support.gradle'
 android {
 

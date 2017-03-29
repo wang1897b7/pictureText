@@ -17,6 +17,7 @@ import android.provider.MediaStore.MediaColumns;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.TextPaint;
+import android.text.TextUtils;
 import android.text.style.URLSpan;
 import android.util.Log;
 import android.view.Gravity;
@@ -141,6 +142,17 @@ public class AppUtil {
             return defaultValue;
         }
         return defaultValue;
+    }
+
+    public static boolean openAppInfo(Context context, String packageName) {
+        if (!TextUtils.isEmpty(packageName)) {
+            Intent intent = new Intent();
+            intent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
+            intent.setData(Uri.parse("package:" + packageName));
+            context.startActivity(intent);
+            return true;
+        }
+        return false;
     }
 
     public static int getJsonIntegerValue(JSONObject json, String key) {
