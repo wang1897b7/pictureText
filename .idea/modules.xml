@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library_circle_viewpager/library_circle_viewpager.iml" filepath="$PROJECT_DIR$/library_circle_viewpager/library_circle_viewpager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library_recycler_adapter/library_recycler_adapter.iml" filepath="$PROJECT_DIR$/library_recycler_adapter/library_recycler_adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/pictureText.iml" filepath="$PROJECT_DIR$/pictureText.iml" />
     </modules>
   </component>
